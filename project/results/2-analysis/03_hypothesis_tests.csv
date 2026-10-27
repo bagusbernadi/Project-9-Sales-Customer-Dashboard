@@ -1,0 +1,6 @@
+no,hipotesis,verdict,bukti
+H1,Penjualan memuncak September sampai November,Terbukti,"Bulan tertinggi rata-rata: 11. Tiga teratas: [11, 10, 9]. Sep-Nov rata-rata £1.148.588 vs rata-rata bulanan £774.229"
+H2,Sebagian kecil pelanggan menyumbang sebagian besar revenue,Terbukti,"10% pelanggan teratas = 63,7% revenue"
+H3,Sebagian kecil produk menyumbang sekitar 80% revenue,Sebagian,"1.048 dari 4.858 produk (21,6%) mencapai 80% revenue"
+H4,Pelanggan luar Inggris lebih jarang memesan tetapi nilai per pesanan lebih besar,Sebagian,"Rata-rata invoice per pelanggan: UK 6,20, non-UK 6,49. AOV per invoice: UK £442, non-UK £810"
+H5,Pembelian ulang dalam 90 hari pertama terkait dengan pelanggan tetap,Sebagian,"Pelanggan dengan pembelian ulang <= 90 hari: 84,8% berstatus tetap (>= 3 invoice), lainnya 31,1%. Hubungan ini sebagian mekanis, jadi maksimal Sebagian"

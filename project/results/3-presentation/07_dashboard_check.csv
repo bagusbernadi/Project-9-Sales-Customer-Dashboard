@@ -1,0 +1,5 @@
+cek,dashboard,sql,selisih,status
+net revenue (dashboard vs SQL),19014210.0,19014210.0,0.0,PASS
+invoice non-batal (dashboard vs SQL),40077.0,40077.0,0.0,PASS
+jumlah pelanggan per segmen (total),5939.0,5939.0,0.0,PASS
+revenue produk teratas (dashboard vs SQL),314045.02,314045.02,0.0,PASS

@@ -1,0 +1,6 @@
+segment,pelanggan,repeat,repeat_rate
+VIP,426,423,0.993
+Loyal,851,835,0.9812
+Regular,1276,1161,0.9099
+Light,1701,1118,0.6573
+Tidak aktif 12 bulan,1624,718,0.4421

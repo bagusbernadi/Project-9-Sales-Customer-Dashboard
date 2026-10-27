@@ -1,0 +1,9 @@
+langkah,status,baris,revenue,catatan
+baris mentah (dua sheet),total,1067371,0.0,
+duplikat persis (8 kolom),dibuang,34335,431716.87,dari sheet lain (periode overlap Dec 2010): 22523; sisanya duplikat dalam sheet yang sama
+harga nol atau negatif,dibuang,6019,-158676.14,tidak bisa dipakai untuk revenue
+baris batal (invoice diawali C),dicatat,19104,-1462050.61,"tetap dihitung, mengurangi revenue bersih"
+baris tanpa Customer ID,dicatat,229202,2724218.55,"tetap dihitung di revenue, tidak dipakai analisis pelanggan"
+"kode non-produk (biaya, ongkir, adjustment)",dicatat,5889,87943.64,"tetap dihitung di revenue, tidak dipakai analisis produk"
+baris tanpa deskripsi,dicatat,0,0.0,"tetap dipakai, deskripsi dibiarkan kosong"
+baris bersih (dimuat ke database),total,1027017,19014209.82,net revenue setelah cleaning
