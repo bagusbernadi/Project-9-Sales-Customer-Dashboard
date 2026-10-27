@@ -2,7 +2,7 @@
 
 # Project 9: Sales & Customer Dashboard
 
-**Status: Selesai di branch `project-9-build`.** Halaman evaluasi ada di [`design-and-report/index.html`](design-and-report/index.html). Dashboard Streamlit dibuat dan diuji lokal, tetapi belum di-deploy.
+**Status: Selesai dan digabung ke `main`.** Halaman evaluasi ada di [`design-and-report/index.html`](design-and-report/index.html). Dashboard Streamlit dibuat dan diuji lokal, tetapi belum di-deploy.
 
 **Tujuan:** membangun dashboard penjualan toko online yang menunjukkan tren revenue, produk, dan segmen pelanggan, sehingga promosi dan program retensi bisa difokuskan.
 
@@ -53,7 +53,7 @@ Estimasi (estimated, bukan hasil eksperimen): jika repeat purchase rate segmen V
 
 ## Batasan
 
-- Harga listing bukan harga transaksi. Data hanya menggambarkan toko di dataset ini.
+- Data hanya menggambarkan toko di dataset ini.
 - Data berhenti 9 Desember 2011.
 - Dashboard belum di-deploy. Rancangan menyebut Looker Studio, dan atas persetujuan user diganti Streamlit.
 - Dua pasang baris dengan deskripsi berbeda tidak bisa dipastikan sebagai ganda, dan dibiarkan.

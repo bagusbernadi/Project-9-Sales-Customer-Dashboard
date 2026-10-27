@@ -400,7 +400,7 @@ rp7 = ['<h4>7.1 Hasil analisis</h4>',
        '<li>Cek silang Q14 dengan Excel asli.</li>'
        '<li>Tentukan dua pasang ganda sisa dengan pemilik data.</li></ul>',
        '<h4>7.6 Batasan</h4>',
-       '<ul><li>Harga listing bukan harga transaksi. Data hanya menggambarkan toko di dataset ini.</li>'
+       '<ul><li>Data hanya menggambarkan toko di dataset ini.</li>'
        '<li>Data berhenti 9 Desember 2011. Des 2011 parsial.</li>'
        '<li>Pola belum tentu penyebab. Repeat rate tinggi di segmen atas sebagian karena segmen dibuat dari revenue.</li>'
        '<li>Batas persentil segmen dan ambang hipotesis adalah asumsi. Belum diuji sensitivitasnya.</li>'
