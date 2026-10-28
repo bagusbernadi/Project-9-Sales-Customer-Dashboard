@@ -24,7 +24,7 @@ Dipecah menjadi 14 pertanyaan (9 Utama, 4 Pendukung, 1 Tambahan). Daftar lengkap
 - Sumber data: [here](https://archive.ics.uci.edu/dataset/502/online+retail+ii) (Versi: 1, Tanggal akses: 23 Oktober 2026)
 - Ukuran: 1.067.371 baris mentah, 1.027.017 baris bersih, 8 kolom, Desember 2009 sampai 9 Desember 2011.
 - Cleaning: duplikat persis, harga nol, dan spasi teks. Revenue batal tetap dihitung sebagai pengurang. Aturan lengkap di `project/docs/cleaning_decisions.md`.
-- Lisensi dan sitasi: belum dicek di halaman sumber (item terbuka).
+- Lisensi: CC BY 4.0 (dicek di halaman UCI, 28 Oktober 2026). Sitasi: Chen, D. (2012). Online Retail II [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5CG6D.
 - Data mentah dan database tidak di-commit. Dibuat ulang dari skrip.
 
 ## 3. Analysis
@@ -59,7 +59,6 @@ Estimasi (estimated, bukan hasil eksperimen): jika repeat purchase rate segmen V
 - Dua pasang baris dengan deskripsi berbeda tidak bisa dipastikan sebagai ganda, dan dibiarkan.
 - Batas persentil segmen dan ambang hipotesis adalah asumsi, belum diuji sensitivitasnya.
 - Excel asli belum dicek. Cek silang memakai LibreOffice Calc.
-- Lisensi dataset dan sitasi belum dicek.
 
 ## Menjalankan
 

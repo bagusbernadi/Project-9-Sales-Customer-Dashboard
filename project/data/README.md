@@ -4,7 +4,8 @@
 - **Versi:** 1
 - **Tanggal akses:** 23 Oktober 2026 (diunduh dari halaman sumber, file `online_retail_II.xlsx`, dua sheet)
 - **Ukuran:** 1.067.371 baris, 8 kolom, Desember 2009 sampai 9 Desember 2011
-- **Lisensi dan sitasi:** belum dicek di halaman sumber (item terbuka)
+- **Lisensi:** CC BY 4.0 (halaman UCI, dicek 28 Oktober 2026)
+- **Sitasi:** Chen, D. (2012). Online Retail II [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5CG6D.
 
 ## Cara menjalankan ulang
 1. Unduh `online_retail_II.xlsx` dari sumber di atas.

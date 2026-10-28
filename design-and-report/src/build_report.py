@@ -262,7 +262,7 @@ rp2.append('<div class="scroll"><table class="rt"><tr><th>No</th><th>Hipotesis</
                    for r in hyp.itertuples()) + '</table></div>')
 
 # ---------------------------------------------------------------- bagian 3
-rp3 = ['<div class="callout a"><h4>Sumber</h4>Online Retail II (UCI), Versi 1, tanggal akses 23 Oktober 2026. Lisensi dan sitasi belum dicek (item terbuka).</div>',
+rp3 = ['<div class="callout a"><h4>Sumber</h4>Online Retail II (UCI), Versi 1, tanggal akses 23 Oktober 2026. Lisensi CC BY 4.0 (dicek di halaman UCI 28 Oktober 2026). Sitasi: Chen, D. (2012). Online Retail II [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5CG6D.</div>',
        '<h3>3.1 Hipotesis pada Design Project</h3>',
        '<div class="scroll"><table class="rt"><tr><th>No</th><th>Hipotesis</th><th>Verdict</th><th>Bukti</th></tr>' +
        "".join(f'<tr><td>{r.no}</td><td>{esc(r.hipotesis)}</td><td>{ {"Terbukti": OK, "Sebagian": PART}.get(r.verdict, NO)(r.verdict) }</td><td>{esc(r.bukti)}</td></tr>'
@@ -271,7 +271,7 @@ rp3 = ['<div class="callout a"><h4>Sumber</h4>Online Retail II (UCI), Versi 1, t
        '<div class="scroll"><table class="rt"><tr><th>Rancangan</th><th>Realisasi</th><th>Verdict</th></tr>' +
        f'<tr><td>Ukuran ±1 juta baris, ±2 tahun</td><td>{I(n_rows_clean)} baris bersih, Des 2009 sampai 9 Des 2011</td><td>{OK("Sesuai")}</td></tr>'
        f'<tr><td>4 tabel data</td><td>4 tabel di DuckDB. Segmen ditambahkan di tahap analisis</td><td>{OK("Sesuai + penyesuaian")}</td></tr>'
-       f'<tr><td>Sumber dan lisensi dicek sebelum dipakai</td><td>Lisensi belum dicek. File diunggah manual oleh user</td><td>{PART("Sebagian")}</td></tr>'
+       f'<tr><td>Sumber dan lisensi dicek sebelum dipakai</td><td>Lisensi CC BY 4.0 (dicek 28 Okt 2026). File diunggah manual oleh user</td><td>{PART("Sebagian")}</td></tr>'
        f'<tr><td>Sumber: Online Retail II (UCI)</td><td>Sumber sama, diunduh dari file yang diunggah user</td><td>{OK("Sesuai")}</td></tr>'
        '</table></div>']
 
@@ -378,7 +378,7 @@ crit = [("Sembilan pertanyaan Utama terjawab dengan angka dari data", "Tercapai"
         ("Setiap baris diubah atau dibuang tercatat, dan tidak ada transaksi ganda", "Sebagian", PART,
          f"Log lengkap di <code>01_dropped_rows.csv</code>. {I(int(ovl['baris_duplikat_sisa']))} pasang ganda sisa dibiarkan"),
         ("Orang awam paham dashboard dalam satu menit", "Belum diuji", NO, "Dashboard tersedia, belum diuji pembaca awam"),
-        ("Checklist standar terpenuhi", "Sebagian", PART, "Dashboard belum di-deploy. Lisensi dan Excel asli belum")]
+        ("Checklist standar terpenuhi", "Sebagian", PART, "Dashboard belum di-deploy. Excel asli belum dicek")]
 n_crit_ok = sum(1 for c in crit if c[1] == "Tercapai")
 n_out_done = n_out_ok
 rp7 = ['<h4>7.1 Hasil analisis</h4>',
@@ -406,7 +406,7 @@ rp7 = ['<h4>7.1 Hasil analisis</h4>',
        '<li>Batas persentil segmen dan ambang hipotesis adalah asumsi. Belum diuji sensitivitasnya.</li>'
        '<li>Dua pasang baris dengan deskripsi berbeda tidak bisa dipastikan sebagai ganda. Dibiarkan.</li>'
        '<li>Dashboard belum di-deploy. Looker Studio tidak dibuat, diganti Streamlit.</li>'
-       '<li>Lisensi dataset dan sitasi belum dicek. Excel asli belum dicek.</li>'
+       '<li>Excel asli belum dicek.</li>'
        f'<li>Analisis negara hanya untuk negara dengan minimal {MIN_CUSTOMER_N} pelanggan ({I(int(rep_ctry.shape[0]))} negara).</li></ul>']
 
 # ---------------------------------------------------------------- rakit halaman
@@ -421,7 +421,7 @@ REPORT_HEAD = [
 ]
 EVQ_VERDICT = [("Tercapai", OK, f"{I(n_rows_clean)} baris bersih dari {I(1067371)} baris mentah, dengan log per langkah."),
                ("Terjawab", OK, f"{len(ANS)} pertanyaan dijawab, {len(WARN)} dengan catatan."),
-               ("Sebagian", PART, "Dataset sesuai tema. File diunggah manual, lisensi belum dicek."),
+               ("Sebagian", PART, "Dataset sesuai tema. File diunggah manual, lisensi CC BY 4.0."),
                ("Sesuai + penyesuaian", PART, "Excel diganti LibreOffice Calc. Looker diganti Streamlit."),
                ("Sebagian", PART, f"{sum(1 for r in STEP_REAL if r[0] == 'Sesuai')} dari {len(STEP_REAL)} langkah sesuai penuh."),
                ("Sebagian", PART, f"{n_out_done} dari {len(OUTS)} output tercapai. Dashboard belum di-deploy."),
