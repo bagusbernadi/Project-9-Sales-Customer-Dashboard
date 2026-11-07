@@ -2,6 +2,8 @@
 
 # Project 9: Sales & Customer Dashboard
 
+**Halaman web:** https://bagusbernadi.github.io/Project-9-Sales-Customer-Dashboard/
+
 **Status: Selesai dan digabung ke `main`.** Halaman evaluasi ada di [`design-and-report/index.html`](design-and-report/index.html). Dashboard Streamlit dibuat dan diuji lokal, tetapi belum di-deploy.
 
 **Tujuan:** membangun dashboard penjualan toko online yang menunjukkan tren revenue, produk, dan segmen pelanggan, sehingga promosi dan program retensi bisa difokuskan.
